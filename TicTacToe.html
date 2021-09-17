@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div id="top">
+<head>
+    <p><a href="#bottom">Click to go to bottom of page</a></p>
+    <title>Best Tic Tac Toe Game Online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <script src="js/tictactoe.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+
+</div>
+<body id="body">
+    <!--header name-->
+    <h1 style="font-size:5vw;">Best Tic Tac Toe game you'll ever play!</h1>
+    <!-- slide show-->
+
+    <div id="slideshow">
+        <div>
+          <img src="images/swag1.jpg">
+        </div>
+        <div>
+          <img src="images/swag2.jpg">
+        </div>
+        <div>
+          Hope you enjoyed the pictures of our swag!!.
+        </div>
+     </div>
+
+    <!--used to overlay canvas over our table-->
+    <div class="center-container">
+
+    <!--canvas width and height must be set here-->
+        <canvas id="win-lines" width="608" height="608"></canvas>
+        <table>
+            <tr>
+                <td id="0" onclick="placeXorO('0')"></td>
+                <td id="1" onclick="placeXorO('1')"></td>
+                <td id="2" onclick="placeXorO('2')"></td>
+            </tr>
+            <tr>
+                <td id="3" onclick="placeXorO('3')"></td>
+                <td id="4" onclick="placeXorO('4')"></td>
+                <td id="5" onclick="placeXorO('5')"></td>
+            </tr>
+            <tr>
+                <td id="6" onclick="placeXorO('6')"></td>
+                <td id="7" onclick="placeXorO('7')"></td>
+                <td id="8" onclick="placeXorO('8')"></td>
+            </tr>
+        </table>
+    </div>
+
+       <!-- form -->
+       <div id="Form">
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            User Name: <input type="text" name="uname">
+        <input type="submit" value="Submit">
+            Your Digits: <input type="text" name="digits">
+        <input type="submit" value="Submit">
+        </form>
+        </div>
+        
+        <p>If you think you are ready to take on the master send me your digits!!</p>
+          <!--/form-->
+      
+
+       
+
+          <!--login form pop up -->
+          <button class="open-button" onclick="openForm()">Open Form</button>
+
+        <div class="form-popup" id="myForm2">
+            <form action="/action_page.php" class="form-container">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+        <!-- @ keyframe animation-->
+        <div id="pitty">
+            <img src="images/pitty.jpg" alt="mr T" width="200" height="200">
+        </div>
+
+        <div class="zoompic">
+            <img src="images/tictac.png" alt="tic tac toe pic">
+        </div>
+
+        <!-- link to top of page-->
+        <p><a href="#top">Click to go to top of page</a></p>
+
+        
+        <div id="bottom"></div>
+
+</body>
+</html>
