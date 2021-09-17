@@ -1,0 +1,195 @@
+body {
+    font-family: arial, Helvetica, sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+/*This container includes my table and canvas.*/
+.center-container {
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+table {/*collapses table borders in to 1 .*/
+    border-collapse: collapse;
+    /*hides outer borders on table*/
+    border-style: hidden;
+}
+
+td {
+    /*this changes cursor to index finger when hovered over td elements*/
+    cursor: pointer;
+    /*table border style*/
+    border: 4px solid rgba(201, 76, 76, 0.3);
+    /*remove default padding*/
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+}
+
+canvas {
+    /*sets canvas position to top left corner of container*/
+    position: absolute;
+    /*places canvas over top of table*/
+    z-index: 10;
+    /*makes canvas invisible*/
+    pointer-events:none;
+}
+
+h1{
+    text-align: center;
+}
+
+/* load page fade when loads*/
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+html {
+    background-color:pink;
+    scroll-behavior: smooth;
+  }
+  
+  Form {
+    position: relative;
+    width: 18%;
+    bottom: 5px;
+    border: 1px ;
+} 
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+ /* key frames*/
+  #pitty {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {top: 0px;}
+    to {top: 200px;}
+  }
+
+/* zoom in and out feature*/
+
+.zoompic {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+    animation: zoompic 2s ease-out infinite;
+  }
+
+@keyframes zoompic {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.tictac.png  {
+	animation: zoompic 15s forwards;
+}
+
+/*slide show*/
+#slideshow {
+    margin: 80px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
